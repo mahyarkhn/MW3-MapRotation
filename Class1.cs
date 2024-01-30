@@ -79,7 +79,7 @@ namespace MapRotation
         {
             string msg = message.ToLower().Trim();
             if (!msg.StartsWith("!")) return EventEat.EatNone;
-            if(msg.StartsWith("!nextgame "))
+            if(msg.StartsWith("!nextgame"))
             {
                 Utilities.SayTo(player, "^7Next Game: ^1Map ^7" + NextMap + ", ^1GameType ^7" + NextDSR);
                 return EventEat.EatGame;
